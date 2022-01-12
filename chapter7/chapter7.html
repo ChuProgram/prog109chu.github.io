@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Chapter 7</title>
+</head>
+<body>
+  <form action="https://prog109chu.github.io/thankyou/thankyou.html" method="post">
+    <fieldset>
+      <legend>User Information</legend>
+      
+      <label>Enter your name:<br/>
+        <input type="text" name="name" size="15" maxlength="50" />
+      </label><br/>
+      
+      <label>Enter your password:<br/>
+        <input type="password" name="password" size="15" maxlength="50" />
+      </label><br/>
+      
+      <label>Tell us about you<br/>
+        <textarea name="comments" rows="5">
+
+        </textarea>
+    </fieldset>
+      <br/>
+      
+      <p>Are you new to my site?
+        <br/>
+        <input type="radio" name="site" value="yes" />yes
+        <input type="radio" name="site" value="no" />no
+      </p>
+      
+      <p>Do you want to subscribe to my blog?
+        <input type="checkbox" name="blog" checked="checked" />
+      </p>
+      
+      <p>What is your student's year?
+        <select name="year">
+          <option>Select one option...</option>
+          <option value="freshman">Freshman</option>
+          <option value="sophomore">Sophomore</option>
+          <option value="junior">Junior</option>
+          <option value="Senior">Senior</option>
+        </select>
+      </p>
+      
+      <p>Where did you hear about me?
+        <br/>
+        <select name="hear" size="3" multiple="multiple">
+          <option value="web">Web</option>
+          <option value="newspaper">Newspaper</option>
+          <option value="friends">Friends</option>
+        </select>
+      </p>
+      
+      <input type="submit" name"send" value="SEND" />
+      
+       
+</body>
+</html>
