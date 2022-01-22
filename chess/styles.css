@@ -61,7 +61,7 @@ clear:both;
 }
 
 #footer {
- width=100%;
+ width:100%;
  background-color: green;
  text-align: center;
  border:solid 1px;
