@@ -9,8 +9,9 @@ width: 90%;
 margin: 0 auto;}
 
 #title{
-   font-family: 'GLTsukiji5goRegular';
-   font-weight: normal;
+   font-family: 'MayinsHandRegular';
+   font-size: 40px;
+   font-weight: bold;
    font-style: normal; 
 }
 
@@ -41,13 +42,10 @@ background-color: #FAF0E6;
 padding: 0.5em 0;}
 
 #feature {
-background-image:url("https://cdn.pixabay.com/photo/2015/12/03/04/41/butterfly-1073709_1280.png");
-background-position: top right;
-background-repeat:no-repeat;
+background: #F0E68C url("https://cdn.pixabay.com/photo/2015/12/03/04/41/butterfly-1073709_1280.png") no-repeat right;
 background-size:100px;
 height: 10em;
-margin-bottom: 1em;
-background-color: #F0E68C;}
+margin-bottom: 1em;}
 
 .column1 {
   height: 10em;
