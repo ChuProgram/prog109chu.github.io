@@ -1,12 +1,11 @@
 * {
   text-align: center;
-  font-family: 'PoppinsRegular';
-}
+  font-family: 'PoppinsRegular'; }
 
 body {
   background: url("https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80") no-repeat center fixed;
   background-size: cover; 
-  margin:0;}
+  margin:0; }
 
 #header {
   position: fixed;
@@ -22,7 +21,7 @@ body {
   background-color: black;
   position: absolute;
   margin-top:0px;
-  width:100%;}
+  width:100%; }
 
 #menu {
   border-bottom-style: solid;
@@ -37,7 +36,7 @@ body {
 li {
   display: inline; }
 
-li a{
+li a {
   font-family: 'LatoRegular';
   font-size: 20px;
   color: black;
@@ -45,8 +44,7 @@ li a{
   text-decoration: none; }
 
 .selected{
-  color: #DE5049
-}
+  color: #DE5049 }
 
 #feature {
   background: #F5CFBE url("https://cdn.pixabay.com/photo/2017/02/26/22/18/overlay-2101573_1280.png")no-repeat;
@@ -63,7 +61,7 @@ li a{
   font-style:italic;
   color: black; }
 
-.description{
+.description {
   font-size: 20px;
   color: black;
   margin: 4% 10% 0% 10%;
@@ -73,14 +71,12 @@ li a{
 
 #footer {
   background-color: #FAF0E6;
-  padding-top:1px;
-  }
+  padding-top:1px; }
 
-.signature{
+.signature {
   background-color:black;
   padding-left: 10px;
   margin:0;
   color: white;
-  text-align: left;
-}
+  text-align: left; }
 
