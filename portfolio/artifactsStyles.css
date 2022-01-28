@@ -1,0 +1,146 @@
+* {
+  font-family: 'PoppinsRegular'; }
+
+body {
+  background: url("https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80") no-repeat center fixed;
+  background-size: cover; 
+  margin:0; }
+
+#header {
+  position: fixed;
+  top:0;
+  width: 100%;
+  left: 0px; }
+
+#title {
+  text-align: center;
+  font-family: 'NowRegular'; 
+  font-size: 50px;
+  font-style: normal;
+  color: white;
+  background-color: black;
+  position: absolute;
+  margin-top: 0px;
+  width: 100%; }
+
+#menu {
+  text-align: center;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: black;
+  margin-top: 68px;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  padding: 0.2em 0; }
+
+.homeLogo {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 160px;
+  margin: 0px 15px 15px 0px; }
+
+li {
+  display: inline; }
+
+li a {
+  font-family: 'LatoRegular';
+  font-size: 20px;
+  color: black;
+  padding: 40px;
+  text-decoration: none; }
+
+.selected {
+  color: #DE5049 }
+
+#menuHeader {
+  text-align: left;
+  padding-left: 50px;
+  font-size: 40px;
+  color: black;
+  margin: 150px 0 0 0; }
+
+#content {
+  width: 100%;
+  min-height: 100%;
+  overflow: auto; }
+
+.artifact-1, .artifact-3, .artifact-5  {
+  text-align: left;
+  width: 58%;
+  padding: 0px 40px 20px 30px;
+  float: left;
+  border-style: dotted;
+  border-width: thick;
+  font-size: 28px;
+  color: white; 
+  margin: 5% 0% 0% 10%; }
+
+.artifact-1 img, .artifact-3 img, .artifact-5 img {
+  display: inline;
+  margin: 5px 5px 5px 10px;
+  float: right;
+  border-radius: 10px/20px;
+  border-color: black;
+  width: 180px;
+  height: 180px;
+  border-style:solid; }
+
+.artifact-1 a, .artifact-3 a, .artifact-5 a {
+  color: white; }
+
+.artifact-1 h3, .artifact-2 h3, .artifact-3 h3, .artifact-4 h3, .artifact-5 h3 {
+  text-align: center; }
+
+.artifact-2, .artifact-4 {
+  text-align: right;
+  width: 58%;
+  padding: 0px 30px 20px 40px;
+  float: right;
+  border-style: dashed;
+  border-width: thick;
+  font-size: 28px;
+  color: black; 
+  margin: 5% 10% 0% 0%; }
+
+.artifact-2 img, .artifact-4 img {
+  display: inline;
+  margin: 5px 10px 5px 5px;
+  float: left;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  border-style:solid; }
+
+.artifact-2 a, .artifact-4 a {
+  color: black; }
+
+.artifact-1 {
+  background-color: #38B6C8; }
+
+.artifact-2 {
+  background-color: #F8F0E5; }
+
+.artifact-3 {
+  background-color: black; }
+
+.artifact-4 {
+  background-color: white; }
+
+.artifact-5 {
+  background-color: black;
+  margin-bottom: 10%; }
+  
+#footer {
+  clear: both;
+  position: relative;
+  background-color: #FAF0E6;
+  padding-top: 1px; }
+
+.signature {
+  background-color: black;
+  padding-left: 10px;
+  margin: 0;
+  color: white;
+  text-align: left; }
