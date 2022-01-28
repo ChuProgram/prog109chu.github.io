@@ -33,6 +33,13 @@ body {
   background-color: white;
   padding: 0.2em 0; }
 
+.homeLogo {
+  width:30px;
+  height:30px;
+  position:absolute;
+  left:100px;
+  margin: 0px 15px 15px 0px; }
+
 li {
   display: inline; }
 
@@ -101,4 +108,3 @@ ul.lists li {
   margin:0;
   color: white;
   text-align: left; }
-
