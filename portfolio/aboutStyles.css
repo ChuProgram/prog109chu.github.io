@@ -99,6 +99,8 @@ ul.lists li {
   border-style:solid; }
 
 #footer {
+  clear: both;
+  position: relative;
   background-color: #FAF0E6;
   padding-top:1px; }
 
