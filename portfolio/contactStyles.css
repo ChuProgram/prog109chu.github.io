@@ -1,0 +1,131 @@
+* {
+  text-align: center;
+  font-family: 'PoppinsRegular'; }
+
+body {
+  background: url("https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80") no-repeat center fixed;
+  background-size: cover; 
+  margin:0; }
+
+#header {
+  position: fixed;
+  top:0;
+  width: 100%;
+  left:0px; }
+
+#title {
+  font-family: 'NowRegular'; 
+  font-size: 50px;
+  font-style: normal;
+  color: white;
+  background-color: black;
+  position: absolute;
+  margin-top:0px;
+  width:100%; }
+
+#menu {
+  border-bottom-style: solid;
+  border-width:thin;
+  border-color:black;
+  margin-top:68px;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  padding: 0.2em 0; }
+
+li {
+  display: inline; }
+
+li a {
+  font-family: 'LatoRegular';
+  font-size: 20px;
+  color: black;
+  padding: 40px;
+  text-decoration: none; }
+
+.selected {
+  color: #DE5049 }
+
+#content {
+  margin: 15% 5% 10% 5%;
+  overflow: hidden; 
+  background-color: rgba(9, 26, 85, 0.8);}
+
+.contactHeader {
+  font-family: 'SinkinSans300Light';
+  text-align: center;
+  font-size: 40px;
+  color: white; 
+  margin: 1% 5% 2% 5%; }
+
+.form, .description {
+  width:35%;
+  float:right;
+  border-style: solid;
+  font-size: 20px;
+  color: black;
+  margin: 3% 5% 5% 5%;
+  background: white;
+  padding: 0% 1% 0% 1%; }
+
+.form h2{
+  text-align:left;
+  padding:6% 0% 0% 5%;
+}
+
+.form fieldset{
+  text-align:left;
+  border:none;
+}
+
+::placeholder{
+  font-size:20px;
+}
+
+input#name, input#email {
+  border:none;
+  border-bottom: 2px solid;
+  text-align:left;
+  margin-bottom: 10%;
+  padding-top: 5%;
+}
+
+.button {
+  margin: 2%;
+  text-align: center;
+}
+
+#submit{
+  width:10em;
+  height:3em;
+}
+
+textarea { 
+  margin-top:5%;
+  padding: 2%;
+  text-align: left;
+  width:95%;
+  height:100px;
+}
+
+.description{
+  border-style:none;
+  background: none;
+  font-size:30px;
+  color:white;
+  padding:0%;
+  margin: 3% 8%;
+}
+
+#footer {
+  clear: both;
+  position: relative;
+  background-color: #FAF0E6;
+  padding-top:1px; }
+
+.signature {
+  background-color:black;
+  padding-left: 10px;
+  margin:0;
+  color: white;
+  text-align: left; }
