@@ -17,9 +17,14 @@ body {
   top: 0;
 }
 
+#header img{
+  margin-top:3%;
+}
+
 .thankyou{
-  font-size: 100px;
-  font-style:'TT2020BaseRegular';
+  margin:0;
+  font-size: 150px;
+  font-family:'TT2020BaseRegular';
   color: black; }
 
 #footer {
