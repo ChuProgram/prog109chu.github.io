@@ -1,0 +1,36 @@
+* {
+  text-align: center;
+  font-family: 'PoppinsRegular'; }
+
+body {
+  background-size: cover; 
+  margin:0; }
+
+#header {
+  position: relative;
+  font-size:50px;
+  top:0;
+  width: 100%;
+  left:0px; }
+
+#header p{
+  top: 0;
+}
+
+.thankyou{
+  font-size: 100px;
+  font-style:'TT2020BaseRegular';
+  color: black; }
+
+#footer {
+  clear: both;
+  position: relative;
+  background-color: #FAF0E6;
+  padding-top: 1px; }
+
+.signature {
+  background-color:black;
+  padding-left: 10px;
+  margin:0;
+  color: white;
+  text-align: left; }
