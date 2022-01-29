@@ -30,7 +30,7 @@ body {
   border-color: black;
   margin-top: 68px;
   width: 100%;
-  position: absolute;
+  position: relative;
   background-color: white;
   padding: 0.2em 0; }
 
