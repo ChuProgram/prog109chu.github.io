@@ -8,6 +8,7 @@
   </head>
   
   <body>
+    <div id="optionPosition">
     <label>What is the size of Rhombus?</label><br>
     <input type="text" id="rHeight" value="5" size="5">
     <br>
@@ -38,20 +39,22 @@
     </select>
     <br>
     
-    <button onclick="createRhombus(document.getElementById('rHeight').value,
+    <button class="button" onclick="createRhombus(document.getElementById('rHeight').value,
                                    document.getElementById('colorEven').value,
                                    document.getElementById('colorOdd').value,
                                    document.getElementById('symbol').value);">
                                    Display Rhombus </button>
-    
-    <div id="upLeft"></div>
-    <div id="upRight"></div>
+    </div>
+      
+    <div id="shapePosition">
+      <div id="upLeft"></div>
+      <div id="upRight"></div>
 
-    <div class="clear"></div>
+      <div class="clear"></div>
 
-    <div id="downLeft"></div>
-    <div id="downRight"></div>
-
+      <div id="downLeft"></div>
+      <div id="downRight"></div>
+    </div>
   <script src="script.js"></script>
 
   </body>
