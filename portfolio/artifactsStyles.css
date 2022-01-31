@@ -75,10 +75,8 @@ li a {
   margin: 5px 5px 5px 10px;
   float: right;
   border-radius: 10px/20px;
-  border-color: black;
   width: 180px;
-  height: 180px;
-  border-style:solid; }
+  height: 180px; }
 
 .artifact-1 a, .artifact-3 a, .artifact-5 a {
   color: white; }
@@ -103,20 +101,23 @@ li a {
   float: left;
   border-radius: 50%;
   width: 180px;
-  height: 180px;
-  border-style:solid; }
+  height: 180px; }
 
 .artifact-2 a, .artifact-4 a {
   color: black; }
 
 .artifact-1 {
-  background-color: #38B6C8; }
+  background-color: #1F8A9A; }
 
 .artifact-2 {
   background-color: #F8F0E5; }
 
 .artifact-3 {
-  background-color: black; }
+  background-color: #0A6429; }
+
+ul.lists li {
+  display: list-item;
+  text-align:left; }
 
 .artifact-4 {
   background-color: white; }
