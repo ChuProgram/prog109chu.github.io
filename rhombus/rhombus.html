@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,42 +9,47 @@
   </head>
   
   <body>
+    <div id="heading">
+      <h1>Create Rhombus!</h1>
+      <h2>by Jackson</h2>
+    </div>
+    
     <div id="optionPosition">
-    <label>What is the size of Rhombus?</label><br>
-    <input type="text" id="rHeight" value="5" size="5">
-    <br>
+      <label>What is the size of Rhombus?</label><br>
+      <input type="text" id="rHeight" value="5" size="5">
+      <br>
     
-    <label>Choose color for Even position</label><br>
-    <select id="colorEven">
-    <option value="#001EFF">Blue</option>
-    <option value="#AF00FF">Purple</option>
-    <option value="#20BC00">Green</option>
-    </select>
-    <br>
+      <label>Choose color for Even position</label><br>
+      <select id="colorEven">
+      <option value="#001EFF">Blue</option>
+      <option value="#AF00FF">Purple</option>
+      <option value="#20BC00">Green</option>
+      </select>
+      <br>
 
-    <label>Choose color for Odd position</label><br>
-    <select id="colorOdd">
-    <option value="#FFFE00">Yellow</option>
-    <option value="#FF0000">Red</option>
-    <option value="#FF8300">Orange</option>
-    </select>
-    <br>
+      <label>Choose color for Odd position</label><br>
+      <select id="colorOdd">
+      <option value="#FF0000">Red</option>
+      <option value="#FFFE00">Yellow</option>
+      <option value="#FF8300">Orange</option>
+      </select>
+      <br>
     
-    <label>Choose symbol for Rhombus</label>
-    <select id="symbol">
-    <option value="*">*</option>
-    <option value="&hearts;">&hearts;</option>
-    <option value="ㅋ">ㅋ</option>
-    <option value="$">$</option>
-    <option value="@">@</option>
-    </select>
-    <br>
+      <label>Choose symbol for Rhombus</label>
+      <select id="symbol">
+      <option value="&hearts;">&hearts;</option>
+      <option value="*">*</option>
+      <option value="ㅋ">ㅋ</option>
+      <option value="$">$</option>
+      <option value="@">@</option>
+      </select>
+      <br>
     
-    <button class="button" onclick="createRhombus(document.getElementById('rHeight').value,
-                                   document.getElementById('colorEven').value,
-                                   document.getElementById('colorOdd').value,
-                                   document.getElementById('symbol').value);">
-                                   Display Rhombus </button>
+      <button class="button" onclick="createRhombus(document.getElementById('rHeight').value,
+                                     document.getElementById('colorEven').value,
+                                     document.getElementById('colorOdd').value,
+                                     document.getElementById('symbol').value);">
+                                     Display Rhombus </button>
     </div>
       
     <div id="shapePosition">
