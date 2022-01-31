@@ -21,3 +21,36 @@ clear: both;
 .space {
   color:white;
 }
+
+.button {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+}
+
+select, input {
+  width: 70px;
+  height: 40px;
+  font-size: 15px;
+}
+
+input {
+  text-align: center;
+}
+
+body {
+  background: white;
+}
+
+#shapePosition, #optionPosition {
+  float: left;
+  font-size: 20px;
+}
+
+#shapePosition {
+  font-size: 23px;
+  margin-left: 25%;
+}
+
+
+
