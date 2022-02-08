@@ -1,0 +1,13 @@
+.backgroundImage {
+  position: relative;
+  text-align: center;
+  color: #C1781D; }
+
+.thankyou {
+  font-family: 'AmaticSCBold';
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 1.5;
+  position: absolute;
+  top: 20%;
+  left: 57.5%; }
