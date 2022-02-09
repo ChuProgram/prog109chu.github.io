@@ -1,6 +1,7 @@
 function isValid() {
   if (firstName() && lastName() && email() && phone() && username() &&
      password() && address() && city() && state() && country() && zipcode()){
+    document.getElementById("SubmitSuccess").innerHTML = "<p><strong>Submitted Successfully!</strong></p>";
     return true;
   }
   else {
