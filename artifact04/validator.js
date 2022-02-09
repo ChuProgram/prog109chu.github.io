@@ -1,6 +1,6 @@
 function isValid() {
   if (firstName() && lastName() && email() && phone() && username() &&
-     password() && address() && city() && state() && country() && zipcode())
+     password() && address() && city() && state("State", "dontselect=0") && country() && zipcode())
     return true;
   else
     document.getElementById("SubmitError").innerHTML = "<p><strong>Error Submitting — See Above</strong></p>";
