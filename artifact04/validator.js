@@ -172,14 +172,10 @@ function password(){
   var userPassword = document.getElementById("Password").value;
 
   //3) Do validation
-  if (userPassword===null || userPassword ==="" || userPassword.length > 7) {
-    errorMessages = "<p>Password is required and cannot be greater than 7 characters </p>";
+  if (userPassword===null || userPassword ==="" || userPassword.length > 7 || !pattern.test(userPassword)) {
+    errorMessages = "<p>Password is required and cannot be greater than 7 characters. Password requires 1 upper-case, 1 lower-case, 1 numeric, 1 special character</p>";
     console.log("Invalid Password")
   }
-  else if (!pattern.test(userPassword)) {
-    errorMessages = "<p>Password requires 1 upper-case, 1 lower-case, 1 numeric, 1 special character</p>";
-  }
-  
   else {
     validPassword = true;
     console.log("Valid Password")
