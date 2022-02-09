@@ -319,7 +319,7 @@ function zipcode(){
         errorMessages="<p>Zip Code is required and must have 5 digits</p>"
         console.log("Invalid Zip Code")
       }
-      else {
+      else if ((userZipcode.length == 5 && userZipcode.match(validDigits)) {
         return true;
       }
   }
