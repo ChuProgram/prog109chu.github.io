@@ -7,7 +7,7 @@ function isValid() {
   event.preventDefault();
   return false;
 }
-var errorList=[];
+
 FirstName.addEventListener('blur', firstName, false);
 function firstName(){
   //1) Create variable
@@ -107,7 +107,7 @@ function phone(){
   var validPhone=false;
   var errorMessages = "";
   
-  var numbers= /(^[0-9]+[-]*[0-9]+$)/;
+  var numbers= /(^[0-9]+[-]*[0-9]+[-]*[0-9]+$)/;
 
   //2) read value from HTML
   var userPhone = document.getElementById("Phone").value;
