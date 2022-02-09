@@ -252,7 +252,7 @@ function state(){
   var errorMessages = "";
 
   //2) read value from HTML
-  var userState = document.getElementById("State").value;
+  var userState = document.getElementById("StateId").value;
 
   //3) Do validation
   if (userState == "0") {
