@@ -308,7 +308,7 @@ function zipcode(){
   var errorMessages = "";
   var country = document.getElementById("CountryId").value;
   
-  var validDigits=/^([0-9]{5})(?:[-\s]*([0-9]{4}))?$/
+  var validDigits=/^\d{5}(-\d{4})?$/
   
   //2) read value from HTML
   var userZipcode = document.getElementById("Zipcode").value;
