@@ -320,7 +320,7 @@ function zipcode(){
         console.log("Invalid Zip Code")
       }
       else if ((userZipcode.length == 5 && userZipcode.match(validDigits)) {
-        return true;
+        validZipcode = true
       }
   }
   else {
