@@ -252,11 +252,10 @@ function state(){
   var errorMessages = "";
 
   //2) read value from HTML
-  var userState = document.getElementById("State");
-  var userStateOption = userState.options[userState.selectedIndex].value;
+  var userState = document.getElementById("State").value;
 
   //3) Do validation
-  if (userStateOption == "0") {
+  if (userState == "[Choose Your State]") {
     errorMessages = "<p>State is required!</p>";
     console.log("Invalid State")
   }
