@@ -319,6 +319,7 @@ function zipcode(){
         errorMessages="<p>Zip Code is required and must have 5 digits</p>"
         console.log("Invalid Zip Code")
       }
+    return true;
   }
   else {
     validZipcode = true
