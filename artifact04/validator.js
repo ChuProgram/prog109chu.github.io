@@ -316,12 +316,10 @@ function zipcode(){
   //3) Do validation
   if (country === "USA") {
       if (userZipcode.length != 5 || !userZipcode.match(validDigits)) {
-        errorMessages="<p>Zip Code is required and must have 5 digits</p>"
+        errorMessages="<p>Zip Code is required in USA and must have 5 digits</p>"
         console.log("Invalid Zip Code")
       }
-      else if ((userZipcode.length == 5 && userZipcode.match(validDigits)) {
-        validZipcode = true
-      }
+    validZipcode = true
   }
   else {
     validZipcode = true
