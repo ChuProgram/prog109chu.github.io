@@ -319,7 +319,6 @@ function zipcode(){
         errorMessages="<p>Zip Code is required in USA and must have 5 digits</p>"
         console.log("Invalid Zip Code")
       }
-    validZipcode = true
   }
   else {
     validZipcode = true
