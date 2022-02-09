@@ -280,7 +280,7 @@ function country(){
   var errorMessages = "";
 
   //2) read value from HTML
-  var userCountry = document.getElementById("Country").value;
+  var userCountry = document.getElementById("CountryId").value;
 
   //3) Do validation
   if (userCountry == "0") {
