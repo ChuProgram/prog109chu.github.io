@@ -1,11 +1,13 @@
 function isValid() {
   if (firstName() && lastName() && email() && phone() && username() &&
-     password() && address() && city() && state() && country() && zipcode())
+     password() && address() && city() && state() && country() && zipcode()){
     return true;
-  else
+  }
+  else {
     document.getElementById("SubmitError").innerHTML = "<p><strong>Error Submitting — See Above</strong></p>";
-  event.preventDefault();
-  return false;
+    event.preventDefault();
+    return false;
+  }
 }
 
 FirstName.addEventListener('blur', firstName, false);
