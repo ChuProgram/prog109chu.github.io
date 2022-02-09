@@ -255,9 +255,10 @@ function state(){
   var userState = document.getElementById("State").value;
 
   //3) Do validation
-  if (userState == "") {
+  if (userState == "0") {
     errorMessages = "<p>State is required!</p>";
     console.log("Invalid State")
+    return false;
   }
   
   else {
