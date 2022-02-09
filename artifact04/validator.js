@@ -308,7 +308,7 @@ function zipcode(){
   var errorMessages = "";
   var country = document.getElementById("CountryId").value;
   
-  var numbers=/^[0-9]+$/;
+  var validDigits=/^([0-9]{5})(?:[-\s]*([0-9]{4}))?$/
   
   //2) read value from HTML
   var userZipcode = document.getElementById("Zipcode").value;
@@ -316,7 +316,7 @@ function zipcode(){
   //3) Do validation
   if (country === "USA") {
       if (userZipcode===null || userZipcode==="" || userZipcode.length != 5 ||
-          !userPhone.match(numbers)) {
+          !userPhone.match(validDigits)) {
         errorMessages="<p>Zip Code is required and must have 5 digits</p>"
         console.log("Invalid Zip Code")
       }
