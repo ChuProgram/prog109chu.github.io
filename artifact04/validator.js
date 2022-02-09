@@ -166,7 +166,7 @@ function password(){
   var validPassword=false;
   var errorMessages = "";
   
-  var pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{7,}$/;
+  var pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{,7}$/;
 
   //2) read value from HTML
   var userPassword = document.getElementById("Password").value;
