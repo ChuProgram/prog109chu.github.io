@@ -306,7 +306,7 @@ function zipcode(){
   //1) Create variable
   var validZipcode=false;
   var errorMessages = "";
-  var country = document.getElementById("Country").value;
+  var country = document.getElementById("CountryId").value;
   
   var numbers=/^[0-9]+$/;
   
