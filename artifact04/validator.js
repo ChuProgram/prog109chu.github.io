@@ -312,14 +312,9 @@ function zipcode(){
   var userZipcode = document.getElementById("Zipcode").value;
 
   //3) Do validation
-  if (country === "USA") {
-      if (userZipcode.length != 5 || isNaN(userZipcode)) {
-        errorMessages="<p>Zip Code is required in USA and must have 5 digits</p>"
-        console.log("Invalid Zip Code")
-      }
-      else {
-        validZipcode = true
-      }
+  if (country === "USA" && (userZipcode.length != 5 || isNaN(userZipcode))) {
+    errorMessages="<p>Zip Code is required in USA and must have 5 digits</p>"
+    console.log("Invalid Zip Code")
   }
   else {
     validZipcode = true
