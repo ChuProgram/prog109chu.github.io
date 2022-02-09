@@ -315,8 +315,7 @@ function zipcode(){
 
   //3) Do validation
   if (country === "USA") {
-      if (userZipcode===null || userZipcode==="" || userZipcode.length != 5 ||
-          !userPhone.match(validDigits)) {
+      if (!userZipcode.match(validDigits)) {
         errorMessages="<p>Zip Code is required and must have 5 digits</p>"
         console.log("Invalid Zip Code")
       }
