@@ -252,8 +252,8 @@ function state(){
   var errorMessages = "";
 
   //2) read value from HTML
-  var userState = document.getElementById("State").value;
-  var userStateOption = userState.options[userState.selectedIndex];
+  var userState = document.getElementById("State");
+  var userStateOption = userState.options[userState.selectedIndex].value;
 
   //3) Do validation
   if (userStateOption == "0") {
