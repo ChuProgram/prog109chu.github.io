@@ -166,13 +166,13 @@ function password(){
   var validPassword=false;
   var errorMessages = "";
   
-  var pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).$/;
+  var pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{7,}$/;
 
   //2) read value from HTML
   var userPassword = document.getElementById("Password").value;
 
   //3) Do validation
-  if (userPassword===null || userPassword ==="" || userPassword.length > 7 || !pattern.test(userPassword)) {
+  if (!pattern.test(userPassword)) {
     errorMessages = "<p>Password is required and cannot be greater than 7 characters. Password requires 1 upper-case, 1 lower-case, 1 numeric, 1 special character</p>";
     console.log("Invalid Password")
   }
