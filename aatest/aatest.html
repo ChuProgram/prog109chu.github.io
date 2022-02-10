@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Artifact 04 - Contact Us">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Artifact 04</title>
+  </head>
+  <body>
+    <form id="myform" action="https://prog109chu.github.io/artifact04/artifact04ThankYou.html" onsubmit="isValid();">
+      <p>
+        <label for='FirstName'>First Name:</label>
+        <input type="text" id="FirstName" name="FirstName" />
+      </p>
+      <div class="warning" id="FirstNameError"></div>
+      
+      <p>
+        <label for='LastName'>Last Name:</label>
+        <input type="text" id="LastName" name="LastName" />
+      </p>
+      <div class="warning" id="LastNameError"></div>
+            
+      <p>
+        <label for='Email'>Email:</label>
+        <input type="text" id="Email" name="Email" />
+      </p>
+      <div class="warning" id="EmailError"></div>
+      
+      <p>
+        <label for='Phone'>Phone:</label>
+        <input type="text" id="Phone" name="Phone" />
+      </p>
+      <div class="warning" id="PhoneError"></div>
+      
+      
+      <p>
+        <label for='Username'>Username:</label>
+        <input type="text" id="Username" name="Username" />
+      </p>
+      <div class="warning" id="UsernameError"></div>
+      
+      <p>
+        <label for='Password'>Password:</label>
+        <input type="password" id="Password" name="Password" />
+      </p>
+      <div class="warning" id="PasswordError"></div>
+      
+      <p>
+        <label for='Address'>Address:</label>
+        <input type="text" id="Address" name="Address" />
+      </p>
+      <div class="warning" id="AddressError"></div>
+      
+      <p>
+        <label for='City'>City:</label>
+        <input type="text" id="City" name="City" />
+      </p>
+      <div class="warning" id="CityError"></div>
+            
+      <p>
+        <label for='StateId'>State:</label>
+        <select id="StateId" name="State">
+          <option value="0" selected="selected">[Choose Your State]</option>
+          <option value="1">AK</option>
+          <option value="2">AL</option>
+          <option value="3">AR</option>
+          <option value="4">AZ</option>
+          <option value="5">CA</option>
+          <option value="6">CO</option>
+          <option value="7">CT</option>
+          <option value="8">DE</option>
+          <option value="9">FL</option>
+          <option value="10">GA</option>
+          <option value="11">HI</option>
+          <option value="12">IA</option>
+          <option value="13">ID</option>
+          <option value="14">IL</option>
+          <option value="15">IN</option>
+          <option value="16">KS</option>
+          <option value="17">KY</option>
+          <option value="18">LA</option>
+          <option value="19">MA</option>
+          <option value="20">MD</option>
+          <option value="21">ME</option>
+          <option value="22">MI</option>
+          <option value="23">MN</option>
+          <option value="24">MO</option>
+          <option value="25">MS</option>
+          <option value="26">MT</option>
+          <option value="27">NC</option>
+          <option value="28">ND</option>
+          <option value="29">NE</option>
+          <option value="30">NH</option>
+          <option value="31">NJ</option>
+          <option value="32">NM</option>
+          <option value="33">NV</option>
+          <option value="34">NY</option>
+          <option value="35">OH</option>
+          <option value="36">OK</option>
+          <option value="37">OR</option>
+          <option value="38">PA</option>
+          <option value="39">RI</option>
+          <option value="40">SC</option>
+          <option value="41">SD</option>
+          <option value="42">TN</option>
+          <option value="43">TX</option>
+          <option value="44">UT</option>
+          <option value="45">VA</option>
+          <option value="46">VT</option>
+          <option value="47">WA</option>
+          <option value="48">WI</option>
+          <option value="49">WV</option>
+          <option value="50">WY</option>
+        </select>
+      </p>
+      <div class="warning" id="StateError"></div>
+      
+      <p>
+        <label for='CountryId'>Country:</label>
+        <select id="CountryId" name="Country">
+          <option value="0" selected="selected">[Choose Your Country]</option>
+          <option value="Canada">Canada</option>
+          <option value="China">China</option>
+          <option value="France">France</option>
+          <option value="Japan">Japan</option>
+          <option value="Korea">Korea</option>
+          <option value="Mexico">Mexico</option>
+          <option value="USA">USA</option>
+        </select>
+      </p>
+      <div class="warning" id="CountryError"></div>
+      
+      <p>
+        <label for='Zipcode'>Zip Code:</label>
+        <input type="text" id="Zipcode" name="Zipcode" />
+      </p>
+      <div class="warning" id="ZipcodeError"></div>
+      
+      <p>
+        <label for='Comments'>Comment:</label> <br/>
+        <textarea id="Comments" name="comments" placeholder="Write your comment here..."></textarea>
+      </p>
+      
+      <p>
+        <input type="submit" id="submit" name="submit" value="Submit">
+      </p>
+        
+      <div class="success" id="SubmitSuccess"></div>
+      <div class="warning" id="SubmitError"></div>
+        
+    </form>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
