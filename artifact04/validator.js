@@ -88,6 +88,7 @@ function email(){
   
   if (atpos < 1 || dotpos < atpos+2 || dotpos+2 >= userEmail.length) {
     errorMessages = "<p>Invalid email</p>";
+    document.getElementById("Email").focus();
     console.log("Invalid Email")
   } 
   
