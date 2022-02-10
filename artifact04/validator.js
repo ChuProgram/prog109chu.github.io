@@ -26,7 +26,7 @@ function firstName(){
       console.log("First name invalid — length")
         
   } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
-    errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
+    errorMessages += "<p>Invalid caracter in first name (accepts only A-Z, a-z, and ,.'-)</p>";
     console.log("First name invalid — bad characters")
             
   } else {
