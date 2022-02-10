@@ -11,6 +11,13 @@ function isValid() {
   }
 }
 
+const errorMsg = (element, message) {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector(".warning");
+  
+  errorDisplay.innerText = message;
+}
+
 FirstName.addEventListener('blur', firstName, false);
 function firstName(){
   //1) Create variable
@@ -22,7 +29,8 @@ function firstName(){
 
   //3) Do validation
   if (firstname==="null" || firstname==="" || firstname.length > 20 ) {
-      errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
+    errorMsg(firstName, "The first name is required and cannot be greater than 20 characters");
+      //errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
       console.log("First name invalid — length")
         
   } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
@@ -53,7 +61,8 @@ function lastName(){
 
   //3) Do validation
   if (lastname==="null" || lastname==="" || lastname.length > 50 ) {
-      errorMessages += "<p>The last name is required and cannot be greater than 50 characters</p>";
+    errorMsg(lastName, "The last name is required and cannot be greater than 50 characters");
+    //  errorMessages += "<p>The last name is required and cannot be greater than 50 characters</p>";
       console.log("Last name invalid — length")
         
   } else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
