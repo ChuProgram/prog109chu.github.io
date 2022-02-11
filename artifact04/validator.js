@@ -11,7 +11,7 @@ function isValid() {
   }
 }
 
-FirstName.addEventListener('blur', firstName, false);
+FirstName.addEventListener('focus', firstName, false);
 function firstName(){
   //1) Create variable
   var validFirstname=false;
@@ -24,15 +24,10 @@ function firstName(){
   if (firstname==="null" || firstname==="" || firstname.length > 20 ) {
       errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
       console.log("First name invalid — length")
-      firstname.focus();
-      firstname.select();
         
   } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
     errorMessages += "<p>Invalid caracter in first name (accepts only A-Z, a-z, and ,.'-)</p>";
     console.log("First name invalid — bad characters")
-    firstname.focus();
-    firstname.select();
-    firstname.setSelectionRange(0,0);
             
   } else {
     validFirstname = true;
@@ -47,7 +42,7 @@ function firstName(){
 }
 
 
-LastName.addEventListener('blur', lastName, false);
+LastName.addEventListener('focus', lastName, false);
 function lastName(){
   //1) Create variable
   var validLastname=false;
@@ -60,14 +55,10 @@ function lastName(){
   if (lastname==="null" || lastname==="" || lastname.length > 50 ) {
       errorMessages += "<p>The last name is required and cannot be greater than 50 characters</p>";
       console.log("Last name invalid — length")
-      document.getElementById("LastName").focus();
-      document.getElementById("LastName").select();
         
   } else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
     errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
     console.log("Last name invalid — bad characters")
-    document.getElementById("LastName").focus();
-    document.getElementById("LastName").select();
             
   } else {
     validLastname = true;
@@ -98,8 +89,6 @@ function email(){
   if (atpos < 1 || dotpos < atpos+2 || dotpos+2 >= userEmail.length) {
     errorMessages = "<p>Invalid email</p>";
     console.log("Invalid Email")
-    
-    document.getElementById("LastName").select();               // HERERERERERERE
   } 
   
   else {
@@ -131,9 +120,6 @@ function phone(){
       !userPhone.match(numbers)) {
     errorMessages = "<p>Invalid phone number </p>";
     console.log("Invalid Phone")
-    
-    document.getElementById("LastName").focus();              // HERERERERERERE
-      
   }
   
   else {
