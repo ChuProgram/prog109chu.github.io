@@ -7,8 +7,6 @@ function isValid() {
   else {
     document.getElementById("SubmitError").innerHTML = "<p><strong>Error Submitting — See Above</strong></p>";
     event.preventDefault();
-    event.focus();
-    event.select();
     return false;
   }
 }
