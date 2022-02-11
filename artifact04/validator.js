@@ -31,6 +31,7 @@ function firstName(){
     errorMessages += "<p>Invalid caracter in first name (accepts only A-Z, a-z, and ,.'-)</p>";
     console.log("First name invalid — bad characters")
     firstname.focus();
+    firstname.select();
     firstname.setSelectionRange(0,0);
             
   } else {
