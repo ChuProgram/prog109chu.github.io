@@ -73,7 +73,7 @@ function lastName(){
 }
 
 
-Email.addEventListener('select', email, false);
+Email.addEventListener('blur', email, false);
 function email(){
   //1) Create variable
   var validEmail=false;
@@ -104,7 +104,7 @@ function email(){
 }
 
 
-Phone.addEventListener('select', 'focus', phone, false);
+Phone.addEventListener('blur', 'focus', phone, false);
 function phone(){
   //1) Create variable
   var validPhone=false;
