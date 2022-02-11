@@ -30,6 +30,8 @@ function firstName(){
   } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
     errorMessages += "<p>Invalid caracter in first name (accepts only A-Z, a-z, and ,.'-)</p>";
     console.log("First name invalid — bad characters")
+    document.getElementById("FirstName").focus();
+    document.getElementById("FirstName").select();
             
   } else {
     validFirstname = true;
@@ -57,10 +59,14 @@ function lastName(){
   if (lastname==="null" || lastname==="" || lastname.length > 50 ) {
       errorMessages += "<p>The last name is required and cannot be greater than 50 characters</p>";
       console.log("Last name invalid — length")
+      document.getElementById("LastName").focus();
+      document.getElementById("LastName").select();
         
   } else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
     errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
     console.log("Last name invalid — bad characters")
+    document.getElementById("LastName").focus();
+    document.getElementById("LastName").select();
             
   } else {
     validLastname = true;
@@ -91,6 +97,8 @@ function email(){
   if (atpos < 1 || dotpos < atpos+2 || dotpos+2 >= userEmail.length) {
     errorMessages = "<p>Invalid email</p>";
     console.log("Invalid Email")
+    
+      document.getElementById("LastName").select();
   } 
   
   else {
