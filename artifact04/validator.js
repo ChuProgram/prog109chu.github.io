@@ -24,18 +24,18 @@ function firstName(){
   if (firstname==="null" || firstname==="" || firstname.length > 20 ) {
       errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
       console.log("First name invalid — length")
-      firstname.focus(); 
-      firstname.select();
+      FirstName.focus(); 
+      FirstName.select();
         
   } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
-    errorMessages += "<p>Invalid caracter in first name (accepts only A-Z, a-z, and ,.'-)</p>";
-    console.log("First name invalid — bad characters")
-    firstname.focus();
-    firstname.select();
+      errorMessages += "<p>Invalid caracter in first name (accepts only A-Z, a-z, and ,.'-)</p>";
+      console.log("First name invalid — bad characters")
+      firstname.focus();
+      firstname.select();
     
   } else {
-    validFirstname = true;
-    console.log("First name valid")
+      validFirstname = true;
+      console.log("First name valid")
   }
 
   //4) Send error message to HTML
@@ -59,16 +59,14 @@ function lastName(){
   if (lastname==="null" || lastname==="" || lastname.length > 50 ) {
       errorMessages += "<p>The last name is required and cannot be greater than 50 characters</p>";
       console.log("Last name invalid — length")
-      lastname.focus();
-      lastname.select();
     
   } else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
-    errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
-    console.log("Last name invalid — bad characters")
+      errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
+      console.log("Last name invalid — bad characters")
             
   } else {
-    validLastname = true;
-    console.log("Last name valid")
+      validLastname = true;
+      console.log("Last name valid")
   }
 
   //4) Send error message to HTML
