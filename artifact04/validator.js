@@ -30,8 +30,8 @@ function firstName(){
   } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
       errorMessages += "<p>Invalid caracter in first name (accepts only A-Z, a-z, and ,.'-)</p>";
       console.log("First name invalid — bad characters")
-      firstname.focus();
-      firstname.select();
+      FirstName.focus();
+      FirstName.select();
     
   } else {
       validFirstname = true;
@@ -59,6 +59,7 @@ function lastName(){
   if (lastname==="null" || lastname==="" || lastname.length > 50 ) {
       errorMessages += "<p>The last name is required and cannot be greater than 50 characters</p>";
       console.log("Last name invalid — length")
+      LastName.focus();
     
   } else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
       errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
