@@ -11,7 +11,7 @@ function isValid() {
   }
 }
 
-FirstName.addEventListener('blur', firstName, false, 'focus', 'select');
+FirstName.addEventListener('blur', firstName, false);
 function firstName(){
   //1) Create variable
   var validFirstname=false;
@@ -36,6 +36,8 @@ function firstName(){
 
   //4) Send error message to HTML
   document.getElementById("FirstNameError").innerHTML = errorMessages;
+  FirstName.focus();
+  FirstName.select();
 
   //5) return status of each field
   return (validFirstname);
