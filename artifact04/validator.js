@@ -11,7 +11,7 @@ function isValid() {
   }
 }
 
-FirstName.addEventListener('focus', firstName, false);
+FirstName.addEventListener('blur', firstName, false);
 function firstName(){
   //1) Create variable
   var validFirstname=false;
