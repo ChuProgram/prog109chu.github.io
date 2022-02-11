@@ -11,7 +11,7 @@ function isValid() {
   }
 }
 
-FirstName.addEventListener('blur', firstName, false);
+FirstName.addEventListener('focus', firstName, false);
 function firstName(){
   //1) Create variable
   var validFirstname=false;
@@ -24,10 +24,12 @@ function firstName(){
   if (firstname==="null" || firstname==="" || firstname.length > 20 ) {
       errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
       console.log("First name invalid — length")
+    firstname.focus();
         
   } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
     errorMessages += "<p>Invalid caracter in first name (accepts only A-Z, a-z, and ,.'-)</p>";
     console.log("First name invalid — bad characters")
+    firstname.select();
             
   } else {
     validFirstname = true;
@@ -104,7 +106,7 @@ function email(){
 }
 
 
-Phone.addEventListener('blur', 'focus', phone, false);
+Phone.addEventListener('blur', phone, false);
 function phone(){
   //1) Create variable
   var validPhone=false;
