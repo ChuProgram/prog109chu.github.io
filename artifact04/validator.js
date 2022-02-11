@@ -98,7 +98,7 @@ function email(){
     errorMessages = "<p>Invalid email</p>";
     console.log("Invalid Email")
     
-      document.getElementById("LastName").select();
+    document.getElementById("LastName").select();               // HERERERERERERE
   } 
   
   else {
@@ -130,6 +130,9 @@ function phone(){
       !userPhone.match(numbers)) {
     errorMessages = "<p>Invalid phone number </p>";
     console.log("Invalid Phone")
+    
+    document.getElementById("LastName").focus();              // HERERERERERERE
+      
   }
   
   else {
