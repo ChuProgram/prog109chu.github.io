@@ -7,6 +7,8 @@ function isValid() {
   else {
     document.getElementById("SubmitError").innerHTML = "<p><strong>Error Submitting — See Above</strong></p>";
     event.preventDefault();
+    event.focus();
+    event.select();
     return false;
   }
 }
@@ -19,18 +21,16 @@ function firstName(){
 
   //2) read value from HTML
   var firstname = document.getElementById("FirstName").value;
-  FirstName.focus();
+  
   //3) Do validation
   if (firstname==="null" || firstname==="" || firstname.length > 20 ) {
       errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
       console.log("First name invalid — length")
-    FirstName.select();
-        
+    
   } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
       errorMessages += "<p>Invalid caracter in first name (accepts only A-Z, a-z, and ,.'-)</p>";
       console.log("First name invalid — bad characters")
-    FirstName.select();
-    
+      
   } else {
       validFirstname = true;
       console.log("First name valid")
