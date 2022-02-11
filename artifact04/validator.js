@@ -24,7 +24,8 @@ function firstName(){
   if (firstname==="null" || firstname==="" || firstname.length > 20 ) {
       errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
       console.log("First name invalid — length")
-      FirstName.focus();
+      document.getElementById("FirstName").focus();
+      document.getElementById("FirstName").select();
         
   } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
     errorMessages += "<p>Invalid caracter in first name (accepts only A-Z, a-z, and ,.'-)</p>";
