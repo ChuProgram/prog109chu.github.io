@@ -11,7 +11,7 @@ function isValid() {
   }
 }
 
-FirstName.addEventListener('blur', firstName, false);
+FirstName.addEventListener('blur', firstName, false, 'focus', 'select');
 function firstName(){
   //1) Create variable
   var validFirstname=false;
@@ -24,8 +24,6 @@ function firstName(){
   if (firstname==="null" || firstname==="" || firstname.length > 20 ) {
       errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
       console.log("First name invalid — length")
-      FirstName.focus(); 
-      FirstName.select();
         
   } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
       errorMessages += "<p>Invalid caracter in first name (accepts only A-Z, a-z, and ,.'-)</p>";
