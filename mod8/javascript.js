@@ -1,7 +1,11 @@
 function addItem() {
 
   var newItem = document.getElementById("items").value;
-
+  
+  if (newItem === null || newItem === "") {
+    return false;
+  }
+  
   // Create a new element and store it in a variable.
   var newEl = document.createElement('li');
 
