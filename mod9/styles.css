@@ -1,0 +1,8 @@
+ body {
+   height: 200px;
+   background: beige;
+ }
+
+ .dot {
+   position: absolute;
+ }
