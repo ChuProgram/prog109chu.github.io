@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-
 <html lang="en">
 
 <head>
@@ -42,25 +41,31 @@
 
     <div class="form">
       <h2>Send Message</h2>
-        
-        <form id="myform" action="https://prog109chu.github.io/portfolio/thankyou.html" onsubmit="isValid();">
-          <fieldset>
-          
-          <label for='Name'>Name:</label>
+
+      <form id="myform" action="https://prog109chu.github.io/portfolio/thankyou.html" onsubmit="isValid();">
+        <fieldset>
+
+          <label for='FirstName'>First Name:</label>
           <br>
-          <input type="text" id="Name" name="Name" size=55/>
-          <div class="warning" id="NameError"></div>
-          
-         
+          <input type="text" id="FirstName" name="FirstName" size=55/>
+          <div class="warning" id="FirstNameError"></div>
+
+          <label for='LastName'>Last Name:</label>
+          <br>
+          <input type="text" id="LastName" name="LastName" size=55/>
+          <div class="warning" id="LastNameError"></div>
+
+
           <label for='Email'>Email:</label>
           <br>
           <input type="text" id="Email" name="Email" size=55>
           <div class="warning" id="EmailError"></div>
-      
-          
-          <label for='Comments'>Comments:</label> <br/>
+
+
+          <label for='Comments'>Comments:</label>
+          <br/>
           <textarea id="Comments" name="comments" placeholder="Enter message..."></textarea>
-          
+
 
           <div class="button">
             <input type="submit" id="submit" name="submit" value="Submit" />
@@ -69,7 +74,7 @@
           <div class="success" id="SubmitSuccess"></div>
           <div class="warning" id="SubmitError"></div>
 
-          </fieldset>        
+        </fieldset>
       </form>
     </div>
 
