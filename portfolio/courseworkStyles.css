@@ -58,7 +58,13 @@ li a {
   overflow: auto;
   margin: 0% 10% 4% 10%; }
 
+#sections {
+  float:left;
+  width:45%;
+}
+
 .headerSection {
+  margin-top:5%;
   background:#0D269D;
   padding:2%;
   color:white;
@@ -69,28 +75,16 @@ li a {
   text-decoration: underline;
 }
 
-.courseWorkDescription {
-  width:45%;
-  float:left;
+.courseWorkDescription1, .courseWorkDescription2 {
   border-style: solid;
   font-size: 20px;
   color: black;
-  margin: 5% 1%;
+  margin: 2%;
   background: white;
   padding: 0%; }
 
-.courseWorkDescription2 {
-  width:45%;
-  font-size: 20px;
-  float:left;
-  border-style: solid;
-  background: white;
-  margin-left: 5%;
-}
-
 .BCLogo img {
-  margin: 5px 10px 5px 150px;
-  float: left;
+  margin: 0%, 20%, 0%, 0%;
   border-radius: 50%;
   width: 400px;
   height: 400px; }
