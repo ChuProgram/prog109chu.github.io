@@ -42,14 +42,15 @@
 
     <div class="form">
       <h2>Send Message</h2>
-      <form id="myform" action="https://prog109chu.github.io/portfolio/thankyou.html?name=&email=&comments=&submit=Submit" onsubmit="isValid();">
+      <form action="https://prog109chu.github.io/portfolio/thankyou.html" method="get">
         <fieldset>
-          <label for = 'name'></label>
-          <input placeholder="Name" type="text" id="name" name="name" size="50" maxlength="50">
+
+          <label for='Name'>Name:</label>
+          <input type="text" id="Name" name="Name" size=45/>
           <div class="warning" id="NameError"></div>
 
-          <label for = 'email'></label>
-          <input placeholder="Email" type="email" id="email" name="email" size="50" maxlength="50">
+          <label for='Email'>Email:</label>
+          <input type="email" id="Email" name="Email" size=45>
           <div class="warning" id="EmailError"></div>
 
           <textarea name="comments" placeholder="Enter message..."></textarea>
