@@ -17,7 +17,7 @@ function userName() {
   var errorMessages = "";
   
   // Read value from HTML
-  var username = document.getElementById("name").value;
+  var username = document.getElementById("Name").value;
   
   // Validation
   if (username === "null" || username === "" || username.length > 50) {
@@ -48,7 +48,7 @@ function email(){
   var errorMessages = "";
 
   // Read value from HTML
-  var userEmail = document.getElementById("email").value;
+  var userEmail = document.getElementById("Email").value;
   
   var atpos = userEmail.indexOf("@");
   var dotpos = userEmail.lastIndexOf(".");
