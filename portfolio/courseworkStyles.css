@@ -75,6 +75,10 @@ li a {
   color: white; 
   margin: 5% 1% 0% 1%; }
 
+li h2 {
+  list-style:none;
+}
+
 ul.lists li {
   display: list-item;
   text-align:left; }
