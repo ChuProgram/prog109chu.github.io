@@ -29,8 +29,8 @@ function userName() {
   }
   
   else {
-    validFirstname = true;
-    console.log("First name valid")
+    validName = true;
+    console.log("Name valid")
   }
   
   // Send error messages to HTML
