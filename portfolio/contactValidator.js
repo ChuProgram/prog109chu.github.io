@@ -99,3 +99,6 @@ function email(){
   // Return status of each field
   return (validEmail);
 }
+
+var d = new Date();
+document.getElementById("time").innerHTML = d;
