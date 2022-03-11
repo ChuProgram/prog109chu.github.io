@@ -10,7 +10,7 @@ function isValid() {
   }
 }
 
-Name.addEventListener('blur', userName, false);
+name.addEventListener('blur', userName, false);
 function userName() {
   // Create variable
   var validName = false;
@@ -41,7 +41,7 @@ function userName() {
 }
 
 
-Email.addEventListener('blur', email, false);
+email.addEventListener('blur', email, false);
 function email(){
   // Create variable
   var validEmail=false;
