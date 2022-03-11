@@ -78,7 +78,7 @@ li a {
   border:none;
 }
 
-input#Name, input#Email {
+input#FirstName, input#LastName, input#Email {
   border:none;
   border-bottom: 2px solid;
   text-align:left;
