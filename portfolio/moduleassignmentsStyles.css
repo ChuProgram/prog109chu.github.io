@@ -58,7 +58,7 @@ li a {
   overflow: auto;
   margin: 0% 10% 4% 10%; }
 
-#box {
+.box {
   width:45%;
   float:left;
   border-style: solid;
@@ -67,34 +67,34 @@ li a {
   border-style: solid;
 }
 
-.boxColor1{
+#boxColor1{
   background: yellow; }
 
-.boxColor2 {
+#boxColor2 {
   background: red; }
 
-.boxColor3 {
+#boxColor3 {
   background: blue; }
 
-.boxColor4 {
+#boxColor4 {
   background: green; }
 
-.boxColor5{
+#boxColor5{
   background: pink; }
 
-.boxColor6 {
+#boxColor6 {
   background: black; }
 
-.boxColor7 {
+#boxColor7 {
   background: brown; }
 
-.boxColor8 {
+#boxColor8 {
   background: purple; }
 
-.boxColor9 {
+#boxColor9 {
   background: cyan; }
 
-.boxColor10 {
+#boxColor10 {
   background: orange; }
 
 .descriptionBox{
