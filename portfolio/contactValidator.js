@@ -1,10 +1,12 @@
 function isValid() {
   if (userName() && email()){
     document.getElementById("SubmitSuccess").innerHTML = "<p><strong>Submitted Successfully!</strong></p>";
+    document.getElementById("SubmitError").innerHTML.display = "none";
     return true;
   }
   else {
     document.getElementById("SubmitError").innerHTML = "<p><strong>Error Submitting — See Above</strong></p>";
+    document.getElementById("SubmitSuccess").innerHTML.display = "none";
     event.preventDefault();
     return false;
   }
