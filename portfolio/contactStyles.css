@@ -90,6 +90,14 @@ input#name, input#email {
   padding-top: 5%;
 }
 
+.warning {
+    color:red;
+}
+
+.success {
+    color:green;
+}
+
 .button {
   margin: 2%;
   text-align: center;
