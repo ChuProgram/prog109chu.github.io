@@ -1,5 +1,5 @@
 function isValid() {
-  if (userName() && email()){
+  if (firstName() && lastName() && email()){
     document.getElementById("SubmitSuccess").innerHTML = "<p><strong>Submitted Successfully!</strong></p>";
     return true;
   }
@@ -10,34 +10,65 @@ function isValid() {
   }
 }
 
-Name.addEventListener('blur', userName, false);
-function userName() {
+FirstName.addEventListener('blur', firstName, false);
+function firstName(){
   // Create variable
-  var validName = false;
+  var validFirstname=false;
   var errorMessages = "";
-  
+
   // Read value from HTML
-  var username = document.getElementById("Name").value;
+  var firstname = document.getElementById("FirstName").value;
   
   // Validation
-  if (username === "null" || username === "" || username.length > 50) {
-    errorMessages += "<p>The name is required and cannot be greater than 50 characters</p>";
-  } 
-  
-  else if (username.match("^[a-zA-Z ,.'-]+$") === null) {
-    errorMessages += "<p>Invalid caracter in first name (accepts only A-Z, a-z, and ,.'-)</p>";
+  if (firstname==="null" || firstname==="" || firstname.length > 20 ) {
+      errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
+      console.log("First name invalid — length")
+    
+  } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
+      errorMessages += "<p>Invalid caracter in first name (accepts only A-Z, a-z, and ,.'-)</p>";
+      console.log("First name invalid — bad characters")
+      
+  } else {
+      validFirstname = true;
+      console.log("First name valid")
   }
-  
-  else {
-    validName = true;
-    console.log("Name valid")
-  }
-  
-  // Send error messages to HTML
-  document.getElementById("NameError").innerHTML = errorMessages;
-  
+
+  // Send error message to HTML
+  document.getElementById("FirstNameError").innerHTML = errorMessages;
+
   // Return status of each field
-  return (validName);
+  return (validFirstname);
+}
+
+
+LastName.addEventListener('blur', lastName, false);
+function lastName(){
+  // Create variable
+  var validLastname=false;
+  var errorMessages = "";
+
+  // Read value from HTML
+  var lastname = document.getElementById("LastName").value;
+
+  // Validation
+  if (lastname==="null" || lastname==="" || lastname.length > 50 ) {
+      errorMessages += "<p>The last name is required and cannot be greater than 50 characters</p>";
+      console.log("Last name invalid — length")
+    
+  } else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
+      errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
+      console.log("Last name invalid — bad characters")
+            
+  } else {
+      validLastname = true;
+      console.log("Last name valid")
+  }
+
+  // Send error message to HTML
+  document.getElementById("LastNameError").innerHTML = errorMessages;
+
+  // Return status of each field
+  return (validLastname);
 }
 
 
