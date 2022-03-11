@@ -6,12 +6,49 @@ body {
   background-size: cover; 
   margin:0; }
 
+
 #header {
-  position: relative;
+  position: fixed;
+  top:0;
+  width: 100%;
+  left:0px; }
+
+#title {
+  font-family: 'NowRegular'; 
+  font-size: 50px;
+  font-style: normal;
+  color: white;
+  background-color: black;
+  position: absolute;
+  margin-top:0px;
+  width:100%; }
+
+li {
+  display: inline; }
+
+li a {
+  font-family: 'LatoRegular';
+  font-size: 20px;
+  color: black;
+  padding: 40px;
+  text-decoration: none; }
+
+#logo {
+  margin-top:10%;
   font-size:50px;
   top:0;
   width: 100%;
   left:0px; }
+
+#menu {
+  border-bottom-style: solid;
+  border-width:thin;
+  border-color:black;
+  margin-top:68px;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  padding: 0.2em 0; }
 
 #header p{
   top: 0;
