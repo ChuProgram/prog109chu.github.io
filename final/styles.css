@@ -1,0 +1,18 @@
+#title {
+  text-align:center;
+  border-style:solid;
+  background:#B3F83F;
+  margin-bottom:0%;
+  font-size:50px;
+}
+
+#header {
+  text-align:center;
+  border-style:solid;
+  background:#F0F372;
+  margin-top:0%;
+}
+
+.lists {
+  font-size:20px;
+}
